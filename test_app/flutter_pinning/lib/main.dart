@@ -176,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(fontSize: 32),
                 ),
                 style: TextButton.styleFrom(
-                    primary: Colors.black,
+                    foregroundColor: Colors.black,
 
                     backgroundColor: Colors.green
                 ),
@@ -188,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(fontSize: 32),
                 ),
                 style: TextButton.styleFrom(
-                    primary: Colors.black,
+                    foregroundColor: Colors.black,
                     backgroundColor: Colors.orange
                 ),
                 onPressed: (){setState(callHTTPS);},
@@ -199,7 +199,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 32)
                 ),
                 style: TextButton.styleFrom(
-                  primary: Colors.black,
+                  foregroundColor: Colors.black,
                   backgroundColor: Colors.red,
                 ),
                 onPressed: (){
