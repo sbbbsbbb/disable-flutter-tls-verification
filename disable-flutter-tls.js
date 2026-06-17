@@ -68,7 +68,7 @@ var config = {
     }
 };
 
-console.log("[+] Pattern version: Jun 15 2026")
+console.log("[+] Pattern version: Jun 17 2026")
 console.log("[+] Arch:", Process.arch)
 console.log("[+] Platform: ", Process.platform)
 // Flag to check if TLS validation has already been disabled
@@ -122,7 +122,7 @@ function disableTLSValidation() {
     if(Java.available){
         platformConfig = config["android"]
     }
-    else if(Java.available || Swift.available){
+    else if(Process.platform === 'darwin'){
         platformConfig = config["ios"]
     }
     else if(Process.platform in config){
